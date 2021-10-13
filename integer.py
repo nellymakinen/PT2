@@ -20,3 +20,12 @@ class Integer(object):
         
 	def __del__(self):
 		return lib.Integer_delete(self.obj)
+  
+    def publicfib(self):
+        return fib_py(n)
+        
+    def fib_py(n):
+        if n <= 1:
+            return n
+        else:
+            return(fib_py(n-1) + fib_py(n-2))
