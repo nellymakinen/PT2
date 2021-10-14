@@ -37,10 +37,11 @@ def main():
     #fig.suptitle('Fibonacci timing')
     #axs[0].plot(length, fib_py_time)
     #axs[1].plot(length, fib_cpp_time)
-    plt.show()
+    
     #print(fib_py(7))
     #plt.plot([1,2,3],[1,2,3]) # do your plotting here
     plt.savefig("fibonacci_timing.png")
+    #plt.show()
     #f = Integer(5)
     #print(f.fib())
     
