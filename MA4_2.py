@@ -3,7 +3,7 @@ import time
 import matplotlib
 #matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from integer import Integer
+#from integer import Integer
 
 def fib_py(n):
         if n <= 1:
@@ -24,15 +24,15 @@ def main():
         fib_py(i)
         fib_py_time.append(time.time() - ts)
         
-    for i in length:
-        ts = time.time()
-        f = Integer(i)
-        f.fib()
-        fib_cpp_time.append(time.time() - ts)
+#     for i in length:
+#         ts = time.time()
+#         f = Integer(i)
+#         f.fib()
+#         fib_cpp_time.append(time.time() - ts)
     #print(fib_cpp_time)
     #print(fib_py_time)
-    #plt.plot(length,fib_py_time)
-    plt.plot(length,fib_cpp_time)
+    plt.plot(length,fib_py_time)
+    #plt.plot(length,fib_cpp_time)
     #fig, axs = plt.subplots(2)
     #fig.suptitle('Fibonacci timing')
     #axs[0].plot(length, fib_py_time)
