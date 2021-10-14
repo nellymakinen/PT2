@@ -5,14 +5,11 @@ class Integer{
 	public:
 		Integer(int);
 		int get();
-        int Integer::getFib();
-        {
-            return fib
-        }
+        int fib();
 		void set(int);
 	private:
 		int val;
-        int fib();
+        int fib_(int);
 	};
  
 Integer::Integer(int n){
@@ -23,6 +20,19 @@ int Integer::get(){
 	return val;
 	}
  
+int Integer::fib(){
+    return fib(val);
+    }
+
+int Integer::fib_(int n){
+    if (n <= 1){
+        return n;
+    }
+    else{
+        return (fib_(n-1)+fib_(n-2));
+    }
+    }
+
 void Integer::set(int n){
 	val = n;
 	}
