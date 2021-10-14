@@ -6,17 +6,15 @@ import matplotlib.pyplot as plt
 from integer import Integer
 
 def fib_py(n):
-        if n <= 1:
-            return n
-        else:
-            return(fib_py(n-1) + fib_py(n-2))
-        
+    if n <= 1:
+        return n
+    else:
+        return(fib_py(n-1) + fib_py(n-2))
+            
 length = [x for x in range(15)]
 
 fib_py_time = []
 fib_cpp_time = []
-
-#plt.plot(length, fib_py_time)
 
 def main():
     for i in length:
@@ -33,16 +31,16 @@ def main():
     #print(fib_cpp_time)
     #print(fib_py_time)
     #plt.plot(length,fib_py_time)
-    plt.plot(length,fib_cpp_time)
+    #plt.plot(length,fib_cpp_time)
     #fig, axs = plt.subplots(2)
     #fig.suptitle('Fibonacci timing')
     #axs[0].plot(length, fib_py_time)
     #axs[1].plot(length, fib_cpp_time)
     
     #print(fib_py(7))
-    #plt.plot([1,2,3],[1,2,3]) # do your plotting here
+    plt.plot(length,fib_py_time,fib_cpp_time) # do your plotting here
     plt.savefig("fibonacci_timing.png")
-    #plt.show()
+    plt.show()
     #f = Integer(5)
     #print(f.fib())
     
