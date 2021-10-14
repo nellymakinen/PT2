@@ -11,15 +11,17 @@ def fib_py(n):
         else:
             return(fib_py(n-1) + fib_py(n-2))
         
+length = [x for x in range(35)]
+fib_by_time = []
+for i in length:
+    ts = time.time()
+    fib_py(i)
+    fib_py_time.append(time.time() - ts)
+plt.plot(length, fib_py_time)
+plt.show()
+
 def main():
-    length = [x for x in range(35)]
-    fib_by_time = []
-    for i in length:
-        ts = time.time()
-        fib_py(i)
-        fib_py_time.append(time.time() - ts)
-    plt.plot(length, fib_py_time)
-    plt.show()
+    
     print(fib_py(7))
     #plt.plot([1,2,3],[1,2,3]) # do your plotting here
     plt.savefig("fibonacci_timing.png")
