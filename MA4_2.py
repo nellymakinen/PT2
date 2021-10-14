@@ -3,7 +3,7 @@ import time
 import matplotlib
 #matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-#from integer import Integer
+from integer import Integer
 
 def fib_py(n):
         if n <= 1:
