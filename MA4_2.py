@@ -39,7 +39,7 @@ def main():
     
     #print(fib_py(7))
     plt.plot(length,fib_py_time,fib_cpp_time) # do your plotting here
-    plt.savefig("fibonacci_timing.png")
+    plt.savefig("fibonacci_time.png")
     plt.show()
     #f = Integer(5)
     #print(f.fib())
