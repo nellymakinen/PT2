@@ -21,7 +21,7 @@ int Integer::get(){
 	}
  
 int Integer::fib(){
-    return fib(val);
+    return fib_(val);
     }
 
 int Integer::fib_(int n){
