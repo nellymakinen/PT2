@@ -41,8 +41,8 @@ def main():
     plt.plot(length,fib_py_time)#,fib_cpp_time) # do your plotting here
     plt.savefig("fibonaccitiming.png")
     plt.show()
-    #f = Integer(5)
-    #print(f.fib())
+    f = Integer(47)
+    print(f.fib())
     
 if __name__ == '__main__':
     main()
