@@ -11,7 +11,7 @@ def fib_py(n):
     else:
         return(fib_py(n-1) + fib_py(n-2))
             
-length = [x for x in range(15)]
+length = [x for x in range(20)]
 
 fib_py_time = []
 fib_cpp_time = []
@@ -38,7 +38,7 @@ def main():
     #axs[1].plot(length, fib_cpp_time)
     
     #print(fib_py(7))
-    plt.plot(length,fib_py_time)#,fib_cpp_time) # do your plotting here
+    plt.plot(length,fib_py_time ,fib_cpp_time) # do your plotting here
     plt.savefig("fibonaccitiming.png")
     plt.show()
     f = Integer(47)
