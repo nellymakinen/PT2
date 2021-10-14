@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import time
 import matplotlib
-matplotlib.use("Agg")
+#matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from integer import Integer
 
@@ -12,11 +12,14 @@ def fib_py(n):
             return(fib_py(n-1) + fib_py(n-2))
         
 length = [x for x in range(35)]
-fib_by_time = []
+
+fib_py_time = []
+
 for i in length:
     ts = time.time()
     fib_py(i)
     fib_py_time.append(time.time() - ts)
+    
 plt.plot(length, fib_py_time)
 plt.show()
 
