@@ -31,7 +31,7 @@ def main():
         fib_cpp_time.append(time.time() - ts)
     #print(fib_cpp_time)
     #print(fib_py_time)
-    plt.plot(length,fib_py_time)
+    #plt.plot(length,fib_py_time)
     plt.plot(length,fib_cpp_time)
     #fig, axs = plt.subplots(2)
     #fig.suptitle('Fibonacci timing')
