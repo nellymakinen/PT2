@@ -11,7 +11,7 @@ def fib_py(n):
         else:
             return(fib_py(n-1) + fib_py(n-2))
         
-length = [x for x in range(35)]
+length = [x for x in range(15)]
 
 fib_py_time = []
 fib_cpp_time = []
@@ -21,13 +21,13 @@ fib_cpp_time = []
 def main():
     for i in length:
         ts = time.time()
-        fib_py(i)
+        print(fib_py(i))
         fib_py_time.append(time.time() - ts)
         
     for i in length:
         ts = time.time()
         f = Integer(i)
-        f.fib()
+        print(f.fib())
         fib_cpp_time.append(time.time() - ts)
         
     fig, axs = plt.subplots(2)
