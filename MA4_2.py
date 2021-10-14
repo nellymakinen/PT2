@@ -38,8 +38,8 @@ def main():
     #axs[1].plot(length, fib_cpp_time)
     
     #print(fib_py(7))
-    plt.plot(length,fib_py_time,fib_cpp_time) # do your plotting here
-    plt.savefig("fibonacci_time.png")
+    plt.plot(length,fib_py_time)#,fib_cpp_time) # do your plotting here
+    plt.savefig("fibonaccitiming.png")
     plt.show()
     #f = Integer(5)
     #print(f.fib())
