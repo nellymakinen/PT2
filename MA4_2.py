@@ -21,14 +21,16 @@ fib_cpp_time = []
 def main():
     for i in length:
         ts = time.time()
-        print(fib_py(i))
+        fib_py(i)
         fib_py_time.append(time.time() - ts)
         
     for i in length:
         ts = time.time()
         f = Integer(i)
-        print(f.fib())
+        f.fib()
         fib_cpp_time.append(time.time() - ts)
+    print(fib_cpp_time)
+    print(fib_py_time)
         
     fig, axs = plt.subplots(2)
     fig.suptitle('Fibonacci timing')
