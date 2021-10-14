@@ -5,9 +5,14 @@ class Integer{
 	public:
 		Integer(int);
 		int get();
+        int Integer::getFib();
+        {
+            return fib
+        }
 		void set(int);
 	private:
 		int val;
+        int fib();
 	};
  
 Integer::Integer(int n){
