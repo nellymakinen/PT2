@@ -28,21 +28,11 @@ def main():
         f.fib()
         fib_cpp_time.append(time.time() - ts)
         
-    #print(fib_cpp_time)
-    #print(fib_py_time)
-    #plt.plot(length,fib_py_time)
-    #plt.plot(length,fib_cpp_time)
-    #fig, axs = plt.subplots(2)
-    #fig.suptitle('Fibonacci timing')
-    #axs[0].plot(length, fib_py_time)
-    #axs[1].plot(length, fib_cpp_time)
-    
-    #print(fib_py(7))
     plt.plot(length,fib_py_time ,fib_cpp_time) # do your plotting here
     plt.savefig("fibonaccitiming.png")
     plt.show()
-    f = Integer(47)
-    print(f.fib())
+    #f = Integer(47)
+    #print(f.fib())
     
 if __name__ == '__main__':
     main()
