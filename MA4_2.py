@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-6858 7474 
+
 import time
 import matplotlib
 import matplotlib.pyplot as plt
