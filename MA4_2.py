@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
+#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
 import time
 import matplotlib
-#matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from integer import Integer
 
@@ -11,7 +11,7 @@ def fib_py(n):
     else:
         return(fib_py(n-1) + fib_py(n-2))
             
-length = [x for x in range(20)]
+length = [x for x in range(30,45)]
 
 fib_py_time = []
 fib_cpp_time = []
@@ -29,7 +29,7 @@ def main():
         fib_cpp_time.append(time.time() - ts)
         
     plt.plot(length,fib_py_time ,fib_cpp_time) # do your plotting here
-    plt.savefig("fibonaccitiming.png")
+    plt.savefig("fibonaccitiming2.png")
     plt.show()
     #f = Integer(47)
     #print(f.fib())
