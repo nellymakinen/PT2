@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+6858 7474 
 import time
 import matplotlib
 import matplotlib.pyplot as plt
@@ -29,7 +29,7 @@ def main():
         fib_cpp_time.append(time.time() - ts)
         
     plt.plot(length,fib_py_time,fib_cpp_time) # do your plotting here
-    plt.savefig("fibonaccitiming2.png")
+    plt.savefig("fibonacci.png")
     plt.show()
     #f = Integer(47) #Integer(47) blir negativt pga overflow, max-värde har nåtts!
     #print(f.fib())
