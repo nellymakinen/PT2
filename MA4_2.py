@@ -11,7 +11,7 @@ def fib_py(n):
     else:
         return(fib_py(n-1) + fib_py(n-2))
             
-length = [x for x in range(30,45)] #till tid 45
+length = [x for x in range(5,9)] #till tid 45
 
 fib_py_time = []
 fib_cpp_time = []
