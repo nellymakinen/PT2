@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # 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
+
 import time
 import matplotlib
 import matplotlib.pyplot as plt
@@ -11,7 +12,7 @@ def fib_py(n):
     else:
         return(fib_py(n-1) + fib_py(n-2))
             
-length = [x for x in range(10)] #till tid 45
+length = [x for x in range(30,45)] #till tid 45
 
 fib_py_time = []
 fib_cpp_time = []
